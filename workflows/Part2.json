@@ -1,0 +1,67 @@
+{
+  "name": "Part2",
+  "nodes": [
+    {
+      "parameters": {
+        "value": "={{ $json[\"Dime un numero\"] }}",
+        "dataPropertyName": "hash"
+      },
+      "type": "n8n-nodes-base.crypto",
+      "typeVersion": 1,
+      "position": [
+        640,
+        0
+      ],
+      "id": "c07b787c-e953-4797-be7c-19128d1f2508",
+      "name": "Crypto"
+    },
+    {
+      "parameters": {
+        "formTitle": "A",
+        "formDescription": "A",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Dime un numero"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.5,
+      "position": [
+        368,
+        0
+      ],
+      "id": "6c431f12-5f08-45bb-8004-7d92228ba34c",
+      "name": "On form submission",
+      "webhookId": "d9169a03-0bcd-458c-8fd1-30c673bf8cec"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "Crypto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "6d706cac-2d5c-401e-b2b5-9b5d76cb0c46",
+  "meta": {
+    "instanceId": "c2a38bebfa6d8ff50d6d4f5f475ad3405a48bbe77ccbf08df6e10ac587bc647c"
+  },
+  "id": "PVGnwh4WHX9IZsCP2GoW1",
+  "tags": []
+}

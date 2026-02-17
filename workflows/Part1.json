@@ -1,0 +1,77 @@
+{
+  "name": "Part1",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "e0fa010f-1a51-4f0d-bf45-056a2e3fb0fc",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        320,
+        0
+      ],
+      "id": "ecc37a38-7018-452d-8bba-113019bb8f3f",
+      "name": "Wait",
+      "webhookId": "8c8acde8-68dc-4e51-ba9d-6c00c206ec51"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        592,
+        0
+      ],
+      "id": "59174d18-a40a-4974-a51b-c7f192db68c8",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "66beef1d-e895-4f7e-a8f9-2b71eafcd2b7",
+  "meta": {
+    "instanceId": "c2a38bebfa6d8ff50d6d4f5f475ad3405a48bbe77ccbf08df6e10ac587bc647c"
+  },
+  "id": "sziIpcHJl8AVsCvQvQmmf",
+  "tags": []
+}
