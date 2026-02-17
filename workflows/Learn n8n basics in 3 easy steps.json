@@ -4,7 +4,7 @@
     {
       "parameters": {
         "content": "## ... now let's schedule it ⏰\n\n1. Double-click “Schedule” to set when it runs\n\n2. Connect your Gmail and set the recepient\n\n3. To test, click “Execute workflow” on \nthe \"Schedule\" node",
-        "height": 208,
+        "height": 1072,
         "width": 1072,
         "color": 7
       },
